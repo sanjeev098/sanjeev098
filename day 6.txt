@@ -1,0 +1,661 @@
+day6
+package com.capg.day6;
+
+ 
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+ 
+
+
+//Create A list of integer 
+//Create A list of String
+//Create A list of Double
+
+ 
+
+//Insert , Update ,Delete , Sort the element 
+//Search by element and index 
+
+ 
+
+public class MyList {
+
+ 
+
+    public static void main(String[] args) {
+
+ 
+
+        ArrayList<Integer> ls = new ArrayList<Integer>();
+        // add method of list
+        ls.add(15);
+        ls.add(20);
+        ls.add(10);
+        ls.add(100);
+        ls.add(35);
+        
+        Collections.sort(ls,Collections.reverseOrder());
+
+ 
+
+        // delete all the element of list
+        // ls.clear();
+        
+        //it takes the index value and remove the element
+        //ls.remove(0);
+        
+        //ls.re
+        
+        // it will search for element in list
+        // if element is present (true)
+        // if element is not there it return the flase
+        System.out.println(ls.contains(101));
+
+ 
+
+        System.out.println(ls.equals(35));
+
+ 
+
+        // it will take the index value and print the element
+        // System.out.println(ls.get(0));
+
+ 
+
+        // java 8
+        // most to print value
+        ls.forEach(System.err::println);
+
+ 
+
+        // it will take the value and return the index of element or false
+        // if index is not found return -1
+        //System.out.println("index of 15  :" + ls.indexOf(35));
+
+ 
+
+        // it will list is empty or not
+        System.out.println(ls.isEmpty());
+
+ 
+
+        // print the value
+        System.out.println(ls);
+
+ 
+
+        Iterator<Integer> it = ls.iterator();
+        while (it.hasNext()) {
+            System.out.println("it "+it.next());
+        }
+        //
+        
+        //size of list
+        ls.size();
+        
+        //update the value using index
+        ls.set(0, 200);
+        
+        System.out.println(ls);
+
+ 
+
+         
+           
+    }
+
+ 
+
+}
+ \\\
+package com.capg.day6;
+
+ 
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+ 
+
+
+//Create A list of integer 
+//Create A list of String
+//Create A list of Double
+
+ 
+
+//Insert , Update ,Delete , Sort the element 
+//Search by element and index 
+
+ 
+
+public class MyList {
+
+ 
+
+    public static void main(String[] args) {
+
+ 
+
+        LinkedList<Integer> ls = new LinkedList<Integer>();
+        // add method of list
+        ls.add(15);
+        ls.add(20);
+        ls.add(10);
+        ls.add(100);
+        ls.add(35);
+        
+        Collections.sort(ls,Collections.reverseOrder());
+
+ 
+
+        // delete all the element of list
+        // ls.clear();
+        
+        //it takes the index value and remove the element
+        //ls.remove(0);
+        
+        //ls.re
+        
+        // it will search for element in list
+        // if element is present (true)
+        // if element is not there it return the flase
+        System.out.println(ls.contains(101));
+
+ 
+
+        System.out.println(ls.equals(35));
+
+ 
+
+        // it will take the index value and print the element
+        // System.out.println(ls.get(0));
+
+ 
+
+        // java 8
+        // most to print value
+        ls.forEach(System.err::println);
+
+ 
+
+        // it will take the value and return the index of element or false
+        // if index is not found return -1
+        //System.out.println("index of 15  :" + ls.indexOf(35));
+
+ 
+
+        // it will list is empty or not
+        System.out.println(ls.isEmpty());
+
+ 
+
+        // print the value
+        System.out.println(ls);
+
+ 
+
+        Iterator<Integer> it = ls.iterator();
+        while (it.hasNext()) {
+            System.out.println("it "+it.next());
+        }
+        //
+        
+        //size of list
+        ls.size();
+        
+        //update the value using index
+        ls.set(0, 200);
+        
+        System.out.println(ls);
+
+ 
+
+         
+        //linked List method
+        ls.addFirst(1);
+        ls.addLast(1000);
+        
+        System.out.println(ls);
+      //linked List method
+       Iterator<Integer> rit=ls.descendingIterator();
+       while(rit.hasNext())
+       {
+           System.out.println(rit.next());
+       }
+       
+       //it will give me the first element
+      System.out.println(ls.getFirst());
+      
+      //ls.get lst
+      System.out.println(ls.getLast());
+      
+      //adding the element to tail (last element)
+      ls.offer(10001);
+      System.out.println(ls);
+      //
+     // ls.offerFirst()
+      //
+      //ls.offerLast()
+      
+      //it will return the head node
+      System.out.println(ls.peek());
+      
+      //return the first
+      System.out.println(ls.peekFirst());
+      
+      System.out.println(ls.peekLast());
+      
+      
+      //it will return and remove element also
+      System.out.println(ls.poll());
+      System.out.println(ls.pollFirst());
+      System.out.println(ls.pollLast());
+      System.out.println(ls);
+      
+      ls.removeFirst();
+      ls.removeLast();
+    }
+
+ 
+
+}
+ \\\
+package com.capg.day6;
+
+ 
+
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+
+ 
+
+public class MySet {
+
+ 
+
+    public static void main(String[] args) {
+        
+        //it does not maintain the order
+        //it does not contain the duplicate element
+        //it use the hash internally 
+        //HashSet<Integer> set=new HashSet<Integer>();
+        
+        
+        //linkedHashSet
+        //it maintain the order
+        //it does not contain the duplicate
+        //it internally use the liked list
+        LinkedHashSet<Integer> set=new LinkedHashSet<Integer>();
+        
+        
+        
+        set.add(10);
+        set.add(1);
+        set.add(100);
+        set.add(105);
+        set.add(10);
+        System.out.println(set);
+        
+        
+        Object[] arr=set.toArray();
+        System.out.println(arr.length);
+        for(Object obj:arr)
+        {
+            System.out.println((Integer)obj);
+        }
+        
+        //set.clear();
+        
+        set.contains(10);
+        set.forEach(System.out::println);
+        
+        //set.isEmpty();
+        
+        //set.remove(10);
+        
+        set.size();
+        
+        
+    }
+}
+
+
+
+\\\\\
+package com.capg.day6;
+
+ 
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.TreeSet;
+
+ 
+
+public class MyTreeSet {
+public static void main(String[] args) {
+    
+    //it store the data in sorted order
+    //Collections.reserveorder()
+    TreeSet<Integer> ts=new TreeSet<Integer>(Collections.reverseOrder());
+    ts.add(10);
+    ts.add(1);
+    ts.add(100);
+    ts.add(50);
+    
+    // ts.descendingIterator();
+     //HashSet<Integer> hs=(HashSet<Integer>) ts.descendingSet();
+    
+     //ts.
+     
+    System.out.println(ts);
+}
+}
+ \\\
+[16:48] Umesh (Guest)
+    
+package com.capg.day6;
+
+
+import java.util.ArrayList;
+
+
+public class StudentMain {​​​​​​​​
+    
+    public static void main(String[] args) {​​​​​​​​
+        
+        ArrayList<Student> ls=new ArrayList<Student>();
+        Student s1=new Student(1, "Zee","1000");
+        Student s2=new Student(3, "kumar","500");
+        Student s3=new Student(5, "priya","7000");
+        Student s4=new Student(7, "komal","8000");
+        Student s5=new Student(10, "umesh","2000");
+        
+        ls.add(s1);
+        ls.add(s2);
+        ls.add(s3);
+        ls.add(s4);
+        ls.add(s5);
+        
+        //System.out.println(ls);
+        for(Student e:ls)
+        {​​​​​​​​
+            System.out.println(e);
+        }​​​​​​​​
+        
+        //Sort the user defined data type
+    }​​​​​​​​
+
+
+}​​​​​​​​
+ 
+
+
+
+
+
+​[16:48] Umesh (Guest)
+    
+package com.capg.day6;
+
+
+public class Student {​​​​​​​​
+    
+    private int id;
+    private String name;
+    private String fees;
+
+
+    public Student(int id, String name, String fees) {​​​​​​​​
+        this.id = id;
+        this.name = name;
+        this.fees = fees;
+    }​​​​​​​​
+    
+    public int getId() {​​​​​​​​
+        return id;
+    }​​​​​​​​
+
+
+    public void setId(int id) {​​​​​​​​
+        this.id = id;
+    }​​​​​​​​
+
+
+    public String getName() {​​​​​​​​
+        return name;
+    }​​​​​​​​
+
+
+    public void setName(String name) {​​​​​​​​
+        this.name = name;
+    }​​​​​​​​
+
+
+    public String getFees() {​​​​​​​​
+        return fees;
+    }​​​​​​​​
+
+
+    public void setFees(String fees) {​​​​​​​​
+        this.fees = fees;
+    }​​​​​​​​
+
+
+    @Override
+    public String toString() {​​​​​​​​
+        return "Student [id=" + id + ", name=" + name + ", fees=" + fees + "]";
+    }​​​​​​​​
+
+
+    
+}​​​​​​​​
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     
+    ​[16:54] Umesh (Guest)
+    
+package com.capg.day6;
+
+
+public class Student implements Comparable<Student> {​​​​​​​​
+    
+    private int id;
+    private String name;
+    private String fees;
+
+
+    public Student(int id, String name, String fees) {​​​​​​​​
+        this.id = id;
+        this.name = name;
+        this.fees = fees;
+    }​​​​​​​​
+    
+    public int getId() {​​​​​​​​
+        return id;
+    }​​​​​​​​
+
+
+    public void setId(int id) {​​​​​​​​
+        this.id = id;
+    }​​​​​​​​
+
+
+    public String getName() {​​​​​​​​
+        return name;
+    }​​​​​​​​
+
+
+    public void setName(String name) {​​​​​​​​
+        this.name = name;
+    }​​​​​​​​
+
+
+    public String getFees() {​​​​​​​​
+        return fees;
+    }​​​​​​​​
+
+
+    public void setFees(String fees) {​​​​​​​​
+        this.fees = fees;
+    }​​​​​​​​
+
+
+    @Override
+    public String toString() {​​​​​​​​
+        return "Student [id=" + id + ", name=" + name + ", fees=" + fees + "]";
+    }​​​​​​​​
+
+
+    @Override
+    public int compareTo(Student s1) {​​​​​​​​
+        // TODO Auto-generated method stub
+        /*
+         * if(this.getId()>s1.getId()) {​​​​​​​​ return 1; }​​​​​​​​ else if(this.getId()<s1.getId()) {​​​​​​​​
+         * return -1; }​​​​​​​​ else {​​​​​​​​ return 0; }​​​​​​​​
+         */
+        //string
+        return this.getName().compareTo(s1.getName());
+    }​​​​​​​​
+
+
+    
+}​​​​​​​​
+ 
+
+\\\\\
+
+
+
+
+package com.capg.day6;
+
+ 
+
+import java.util.Comparator;
+
+ 
+
+public class SortByID implements Comparator<Student> {
+
+ 
+
+    @Override
+    public int compare(Student s1, Student s2) {
+        
+        if(s1.getId()>s2.getId())
+        {
+            return -1;
+        }
+        else if(s1.getId()>s2.getId())
+        {
+            return 1;
+        }
+        else
+        {
+        return 0;
+        }
+    }
+    
+    
+
+ 
+
+}
+ \\\\\
+package com.capg.day6;
+
+ 
+
+import java.util.Comparator;
+
+ 
+
+public class SortByName implements Comparator<Student>{
+
+ 
+
+    @Override
+    public int compare(Student s1, Student s2) {
+        // TODO Auto-generated method stub
+        return s1.getName().compareTo(s2.getName());
+    }
+
+ 
+
+}
+\\\
+package com.capg.day6;
+
+ 
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+ 
+
+public class StudentMain {
+    
+    public static void main(String[] args) {
+        
+        ArrayList<Student> ls=new ArrayList<Student>();
+        Student s1=new Student(1, "zee","1000");
+        Student s2=new Student(3, "kumar","500");
+        Student s3=new Student(5, "priya","7000");
+        Student s4=new Student(7, "aomal","8000");
+        Student s5=new Student(10, "umesh","2000");
+        
+        ls.add(s1);
+        ls.add(s2);
+        ls.add(s3);
+        ls.add(s4);
+        ls.add(s5);
+        
+        Collections.sort(ls,new SortByID());
+        //id
+        
+        //name
+        
+        //fees
+        
+        
+        //System.out.println(ls);
+        for(Student e:ls)
+        {
+            System.out.println(e);
+        }
+        
+        
+        //Sort the user defined data type
+    }
+
+ 
+
+}
+ 
+
+
+
+
+
+
+

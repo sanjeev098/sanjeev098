@@ -1,0 +1,563 @@
+//Check for number is even or odd using if else
+//Check the character is vowel or consonant
+//print the month of year using if else ladder
+//print the month using switch case also
+package com.cpag.day2;
+
+ 
+
+import java.io.PrintStream;
+import java.util.Scanner;
+
+ 
+
+public class MYScanner {
+    public static void main(String[] args) {
+       //  class   variable(object)     //constructor
+        //creating the object of scanner class
+        Scanner sc= new Scanner(System.in);    
+        PrintStream output=new PrintStream(System.out);
+        System.out.println("enter value other than int");
+        int num5=sc.nextInt();
+        System.out.println(num5);
+        
+        
+        //print the message on console to enter input value
+        
+          System.out.println("Enter Number 1"); //reading the int value //nextInt
+         // method from the scanner class return the int value //using object you will
+         // able to call variable and method
+          int num1=sc.nextInt();
+          System.out.println("entered number is "+num1);
+          
+          //read and return the float value output.println("Enter the float number");
+          float f=sc.nextFloat(); System.out.println("float number "+f);
+          
+          //read and return the double value System.out.println("enter double value");
+          double d=sc.nextDouble(); System.out.println("Print double "+d);
+          
+          //read and return the boolean value
+          System.out.println("enter boolean value"); boolean b=sc.nextBoolean();
+          System.out.println("Print boolean "+b);
+          
+          //read and return the byte value System.out.println("enter byte value"); byte
+          byte bt=sc.nextByte(); 
+          System.out.println("Print byte "+bt);
+         
+        //reading the one word
+        
+          System.out.println("enter  String"); 
+          String str=sc.next(); //read the string and terminate on the space also
+          System.out.println("Print String "+str);
+         
+        //reading the line
+        //reading the one word
+        //it will read the space and terminate on the enter or next line
+        
+          System.out.println("enter  Line"); String str1=sc.nextLine();
+          System.out.println("Print Line "+str1);
+         
+        
+        //reading the single char
+        System.out.println("Enter the char");
+        //it is method of string class
+        //it takes the index value 
+        //return char located on index value
+        char c= sc.next().charAt(0);
+        System.out.println(c);
+    }
+}
+
+  // loop variable i,j,k,l,n o,p,
+        for (int i = 1; i <= 100; i = i + 1) {
+
+ 
+
+        }
+        // counter
+        // Number of iteration
+        // backward loop
+        // forward loop
+        // condition is checked before execution body of loop
+        int j = 10;
+        while (j >= 1) {
+
+ 
+
+        }
+
+ 
+
+        // do while will be close by semicolon
+        // body of loop is executing before checking the condition
+        //exit control loop
+        int k = 1;
+        do {
+            System.err.println(k);
+            k = k + 1;
+        } while (k <= 10);
+
+/////
+
+[15:16] Umesh (Guest)
+    
+Java Program to Find Largest of Three Numbers
+ 
+Java Program to Display Even Numbers From 1 to 100
+ 
+Java Program to Display Odd Numbers From 1 to 100
+ 
+Java Program to Find Sum of Natural Numbers
+ 
+Java Program to Check Leap Year
+ 
+Java Program to Calculate Simple Interest
+ 
+
+
+​[15:17] Umesh (Guest)
+    Java Program to Find Even Sum of Fibonacci Series Till number N
+\\\
+
+
+package com.cpag.day2;
+
+ 
+
+//create a application to store employee details as
+//1 id
+//2 name
+//3 salary
+
+ 
+
+//POJO --plain old java object
+
+ 
+
+//it is blueprint for object
+
+ 
+
+//create POJO class for student 5 attribute and some method
+//create class for mobile
+//create class for car
+//create class for fan
+//one class by yourself
+
+ 
+
+
+class Employee {
+//it is belong to employee class
+//member variable    
+//variable
+    int id;
+    String name;
+    double salary;
+
+ 
+
+//method
+    // setter method
+    public void setID(int id) {
+        this.id = id;
+    }
+
+ 
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+ 
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+ 
+
+    // main method
+// constructor
+//Normal methods        
+//these are special method in java
+//it have the same name as class name
+    // Constructor is without parameters is called default method
+
+ 
+
+    public Employee() {
+
+ 
+
+    }
+
+ 
+
+    public Employee(int id, String name, double salary) {
+
+ 
+
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+ 
+
+    public Employee(int id, String name) {
+
+ 
+
+        this.id = id;
+        this.name = name;
+
+ 
+
+    }
+
+ 
+
+    public Employee(int id) {
+
+ 
+
+        this.id = id;
+
+ 
+
+    }
+
+ 
+
+    public Employee(String name) {
+
+ 
+
+        this.name = name;
+
+ 
+
+    }
+
+ 
+
+    public Employee(double salary) {
+
+ 
+
+        this.salary = salary;
+    }
+
+ 
+
+    public void print() {
+        System.out.println("id " + this.id);
+        System.out.println("name " + this.name);
+        System.out.println("salary " + this.salary);
+    }
+
+ 
+
+    // getter method
+    public int getID() {
+        return this.id;
+    }
+
+ 
+
+    public String getName() {
+        return this.name;
+    }
+
+ 
+
+    public double getSalary() {
+        return this.salary;
+    }
+
+ 
+
+}
+
+ 
+
+public class EmployeeMain {
+
+ 
+
+    public static void main(String[] args) {
+        //creating the object 
+        //object will store in heap memory
+        Employee raj = new Employee();
+        raj.setID(1001);
+        raj.setName("Raj");
+        raj.setSalary(1000.00);
+        // raj.print();
+        System.out.println(raj.getID());
+        System.out.println(raj.getName());
+        System.out.println(raj.getSalary());
+    }
+}
+ 
+DAY 3
+package com.cpag.day3;
+
+ 
+
+public class MyException {
+
+ 
+
+    public static void main(String[] args) {
+        
+        try
+        {
+        int a=10;
+        int b=0;
+        //int c=a/b;  //you cannot divide any number with zero
+//        System.out.println(c);
+        
+        //Three things
+        
+        //Exception class 
+        //java.lang.ArithmeticException:
+        //exception message --/ by zero
+        //Line no where exception thrown
+        
+         String str=null;
+        // System.out.println(str.toUpperCase());
+         //java.lang.NullPointerException
+         //line no
+         
+         
+         //System.out.println(str.charAt(5));
+         
+         //java.lang.StringIndexOutOfBoundsException
+         //String index out of range: 5
+         //line no 20
+         
+          int[] arr=new int[3];
+          System.out.println(arr[10]);
+         //java.lang.ArrayIndexOutOfBoundsException
+          //Index 10 out of bounds for length 3
+          //line no 32
+        }
+        catch(Exception e)
+        {
+            System.out.println("some error");
+        }
+    }
+}
+ \\\\
+[11:54] Umesh (Guest)
+    
+package com.cpag.day3;
+
+
+import java.io.IOError;
+import java.io.IOException;
+import java.util.Scanner;
+//Class can be converted to exception class by extending the Exception class
+class OnlyPositiveNumberAllowed extends Exception
+{​​​​​​​​
+    OnlyPositiveNumberAllowed(String msg)
+    {​​​​​​​​
+        super(msg);
+    }​​​​​​​​
+}​​​​​​​​
+
+
+public class MyCustomException {​​​​​​​​
+
+
+    public static void main(String[] args) throws OnlyPositiveNumberAllowed {​​​​​​​​
+        
+        //Only accept positive number
+          
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        if(num>0)
+        {​​​​​​​​
+            System.out.println(num);
+        }​​​​​​​​
+        else
+        {​​​​​​​​
+            throw new OnlyPositiveNumberAllowed("Only Positive Number");
+        //System.out.println("enter only positive nummber");    
+        }​​​​​​​​
+        
+    }​​​​​​​​
+}​​​​​​​​[3:01 PM] Umesh (Guest)
+    
+package com.capg.day4;
+
+
+//Method overloading can be done within same class
+//There will be many method with same name and different parameters
+//You can call this 
+class Person {​​​​​​​​
+    public void work() {​​​​​​​​
+        System.out.println("sleeping..");
+    }​​​​​​​​
+
+
+    public void work(int homeWork) {​​​​​​​​
+        System.out.println("doing home work");
+    }​​​​​​​​
+
+
+    public void work(String schoolWork) {​​​​​​​​
+        System.out.println("doing School work");
+    }​​​​​​​​
+
+
+    public void work(double officeWork) {​​​​​​​​
+        System.out.println("doing office work");
+    }​​​​​​​​
+
+
+}​​​​​​​​
+
+
+class School extends Person {​​​​​​​​
+    //Our class should extends the other class
+    //Method should be present in base and child class
+    //it will override the behaviour of parent class and child class method will work
+    @Override
+    public void work() {​​​​​​​​
+        System.out.println("Study the subject");
+    }​​​​​​​​
+}​​​​​​​​
+
+
+public class MyPolymorphismexample {​​​​​​​​
+
+
+    public static void main(String[] args) {​​​​​​​​
+        Person person = new Person();
+        person.work();
+        // doing home work
+        person.work(2);
+
+
+        // doing subject school work
+        person.work("English");
+
+
+        // doing office work
+        person.work(10.000);
+        
+        
+        School school=new School();
+        school.work();
+    }​​​​​​​​
+}​​​​​​​​
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+​[3:01 PM] Umesh (Guest)
+    
+#Polymorphism : out method can take any form at a time 
+
+
+> Person --- Home
+            ---Work(School)  ////method overloading
+            ---Work(Office)  ////method overloading
+            ---Work(homework) //method overloading
+            ---helping the father
+            ---helping the mother
+        -----School
+             --Work(School)     //method overrides    
+            --studing the subject
+            -- student workspace
+
+
+         ----Office
+             ---Work(Office) //method overrides    
+             ---office work
+             ---Others Works             
+         
+
+
+
+
+
+ 
+
+
+
+
+
+​[11:57] Umesh (Guest)
+    Create A custom Exception to input Even 
+​[11:57] Umesh (Guest)
+    Create A program to vote system if age is less than 18 throw AGEISLESSTHAN
+\\\
+day 4
+
+package com.capg.day4;
+
+ 
+
+class Student
+{
+
+ 
+
+private int id;
+private String name;
+
+ 
+
+public Student(int id, String name) {
+    this.id = id;
+    this.name = name;
+}
+
+ 
+
+public int getId() {
+    return id;
+}
+public void setId(int id) {
+    this.id = id;
+}
+public String getName() {
+    return name;
+}
+public void setName(String name) {
+    this.name = name;
+}
+
+ 
+
+    
+}
+
+ 
+
+public class MyEncapsulation {
+public static void main(String[] args) {
+    Student s1=new Student(1001,"abc");
+    System.out.println(s1.getId());
+    System.out.println(s1.getName());
+    
+}
+}
+link
+window: https://doselect.com/gateways/test?access_code=Jo8E/wJIF2i0OHUWGPu5fCuWJBNGh8bvLqkecLQuLkNP20drABjWpuJJh41uEpgcaBeBFZQHVj%2ButZ9LTJJSvTPrQ3ajiz95dB/uJinD1Jg%3D
+
+
+ 

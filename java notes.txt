@@ -1,0 +1,47 @@
+Java 
+#-Eclipse --IDE(Java ,php ,html )
+#-Java Installtion of 1.8
+
+ 
+
+#--Java is platfrom dependant 
+
+ 
+
+
+#Creating the java File
+>With eclipse
+     > Create A java Project First 
+     > create a package inside java project
+       #Rule 1. it always start with com
+       #Rule 2. Do not use any Keyword in package name
+       #Rule 3. create th package inside src folder
+       #Rule 4. company name 
+       #rule 5 . Topic or project
+       #rule 6. Package Name should be lower case letter
+     > create a java class( called as java file)
+           #class name start with Uper case after that any connecting word also start with upper case
+           #public class name and file name should be same            
+
+ 
+
+ramraj.collegname.course.subject.java
+
+ 
+
+>without eclipse 
+  >create a file using notepad
+  >write the java class
+  >compile the class using javac and file name
+  >execute the file :java and then class name   
+
+ 
+
+#eclipse
+   #Workspace--it is like different or changing the folder in os
+   
+   
+#Java File(Java Class or class File)
+    > First line will be always package name   
+    > create main method inside java class
+    >give system.out.print to print on the console
